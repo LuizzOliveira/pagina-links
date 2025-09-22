@@ -6,8 +6,6 @@ interface ButtonProps {
 }
 
 export default function Button({ label, href }: ButtonProps) {
-  if (!href) return null;
-
   const baseClass = `
     bg-gray-600 text-white py-2 rounded-md
     text-center text-sm sm:text-base

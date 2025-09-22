@@ -21,12 +21,6 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Luiz Henrique | Redes Sociais",
-    description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
-    images: ["https://seu-site.com/perfil.png"],
-  },
 };
 
 export default function RootLayout({

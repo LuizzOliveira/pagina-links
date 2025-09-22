@@ -17,9 +17,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* global.css ou tailwind base */
-.no-tap-highlight{
-  -webkit-tap-highlight-color: transparent; /* remove o quadrado preto no toque mobile */
-}/* tailwind.css */
-
