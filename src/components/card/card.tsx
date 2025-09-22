@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./components/Button";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Card() {
   return (
@@ -17,6 +18,7 @@ export default function Card() {
               width={112}
               height={112}
               className="object-cover"
+              priority={true} 
             />
         </div>
 
@@ -26,9 +28,9 @@ export default function Card() {
 
         {/* Botões */}
         <div className="flex flex-col items-center w-full gap-4 mt-4">
-          <Button label="Instagram" href="https://www.instagram.com/lluizh_so"/>
-          <Button label="Linkedin" href="https://www.linkedin.com/in/luiz-oliveira-2a3879255/"/>
-          <Button label="GitHub" href="https://github.com/LuizzOliveira/"/>
+          <Button label="Instagram" href="https://www.instagram.com/lluizh_so" icon={FaInstagram} />
+          <Button label="Linkedin" href="https://www.linkedin.com/in/luiz-oliveira-2a3879255/" icon={FaLinkedin} />
+          <Button label="GitHub" href="https://github.com/LuizzOliveira/" icon={FaGithub} />
         </div>
 
       </div>

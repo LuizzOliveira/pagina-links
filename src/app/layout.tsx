@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
   keywords: ["Luiz Henrique", "redes sociais", "Instagram", "LinkedIn", "GitHub"],
   authors: [{ name: "Luiz Henrique" }],
+  metadataBase: new URL("https://pagina-links-pearl.vercel.app"),
   openGraph: {
     title: "Luiz Henrique | Redes Sociais",
     description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
-    url: "https://pagina-links-pearl.vercel.app/",
     siteName: "Luiz Henrique Links",
     images: [
       {
-        url: "https://files.fm/u/a2rtmdg2am",
+        url: "/perfil.png",
         width: 800,
         height: 600,
       },
@@ -21,7 +21,14 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luiz Henrique | Redes Sociais",
+    description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
+    images: ["/perfil.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -30,6 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+
       <body
         className={`antialiased`}
       >
