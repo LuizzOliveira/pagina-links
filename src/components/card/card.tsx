@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "./components/Button";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaEdit } from "react-icons/fa";
 
 export default function Card() {
   return (
@@ -31,6 +31,7 @@ export default function Card() {
           <Button label="Instagram" href="https://www.instagram.com/lluizh_so" icon={FaInstagram} />
           <Button label="Linkedin" href="https://www.linkedin.com/in/luiz-oliveira-2a3879255/" icon={FaLinkedin} />
           <Button label="GitHub" href="https://github.com/LuizzOliveira/" icon={FaGithub} />
+          <Button label="Frontend Mentor" href="https://www.frontendmentor.io/profile/LuizzOliveira" icon={FaEdit} />
         </div>
 
       </div>
