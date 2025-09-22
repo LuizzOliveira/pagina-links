@@ -4,6 +4,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Luiz Henrique | Redes Sociais",
   description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.ico"
+  },
   keywords: ["Luiz Henrique", "redes sociais", "Instagram", "LinkedIn", "GitHub"],
   authors: [{ name: "Luiz Henrique" }],
   metadataBase: new URL("https://pagina-links-pearl.vercel.app"),
@@ -20,15 +24,8 @@ export const metadata: Metadata = {
     ],
     locale: "pt_BR",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Luiz Henrique | Redes Sociais",
-    description: "Acesse minhas redes sociais: Instagram, LinkedIn e GitHub.",
-    images: ["/perfil.png"],
-  },
+  }
 };
-
 
 export default function RootLayout({
   children,
