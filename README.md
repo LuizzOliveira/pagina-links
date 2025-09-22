@@ -1,93 +1,53 @@
+# 🌐 Página Links
 
-# Portfólio Pessoal - Luiz Henrique
+Olá! 👋\
+Este é um projeto que desenvolvi para **praticar minhas habilidades em
+React e Next.js**.\
+A ideia é criar uma **página de links**, no estilo do Linktree, onde
+posso organizar e exibir links importantes em um só lugar.
 
-Um portfólio online pessoal desenvolvido em **Next.js** e **Tailwind CSS**, com cards de perfil interativos e links diretos para minhas redes sociais. Ideal para apresentação profissional e projetos de front-end.
+------------------------------------------------------------------------
 
----
+## 🚀 Tecnologias que usei
 
-## 🔹 Tecnologias Utilizadas
+-   **React** ⚛️\
+-   **Next.js** 🔗\
+-   **TypeScript** ✨\
+-   **CSS (PostCSS)** 🎨
 
-- [Next.js 13+](https://nextjs.org/) - Framework React moderno para SSR e SSG.
-- [React](https://reactjs.org/) - Biblioteca para construção de interfaces.
-- [Tailwind CSS](https://tailwindcss.com/) - Framework utilitário para estilização rápida e responsiva.
-- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para maior segurança e escalabilidade.
-- [Vercel](https://vercel.com/) - Hospedagem recomendada para Next.js (opcional).
+------------------------------------------------------------------------
 
----
+## 🎯 Sobre o Projeto
 
-## 🔹 Funcionalidades
+Esse projeto é apenas para **estudo e prática**.\
+Estou no início da minha jornada aprendendo **React** e **Next.js**, e
+esse é um dos meus primeiros projetos para colocar em prática o que
+venho estudando.
 
-- Card de perfil interativo com foto circular.
-- Links para redes sociais: Instagram, LinkedIn e GitHub.
-- Layout responsivo, pronto para desktop e mobile.
-- Suporte a tema claro e escuro via CSS prefer-color-scheme.
-- Componentes reutilizáveis (Card, Button).
+Meu foco aqui foi:\
+- Aprender a estrutura básica do Next.js.\
+- Treinar a criação e organização de componentes.\
+- Praticar estilização e uso de TypeScript junto com React.
 
----
+------------------------------------------------------------------------
 
-## 🔹 Estrutura do Projeto
+## ▶️ Como rodar
 
-```
-/app
-  ├─ page.tsx         # Página principal
-  ├─ layout.tsx       # RootLayout com CSS global
-/components
-  ├─ Card.tsx         # Componente de card de perfil
-  ├─ Button.tsx       # Botão reutilizável
-/globals.css           # CSS global e Tailwind
-/public
-  ├─ perfil.png       # Imagem do perfil
-```
+Se quiser rodar localmente:
 
----
-
-## 🔹 Como Executar o Projeto
-
-1. Clone o repositório:  
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-```
-
-2. Acesse a pasta do projeto:  
-```bash
-cd nome-do-repositorio
-```
-
-3. Instale as dependências:  
-```bash
+``` bash
+# Instalar dependências
 npm install
-# ou
-yarn
-```
 
-4. Rode o projeto em modo de desenvolvimento:  
-```bash
+# Iniciar servidor de desenvolvimento
 npm run dev
-# ou
-yarn dev
 ```
 
-5. Abra no navegador:  
-```
-http://localhost:3000
-```
+Depois é só acessar: **http://localhost:3000**
 
----
+------------------------------------------------------------------------
 
-## 🔹 Deploy
+## 📌 Observação
 
-- O projeto pode ser facilmente hospedado no [Vercel](https://vercel.com/), com deploy contínuo a partir do GitHub.  
-
----
-
-## 🔹 Personalização
-
-- Para alterar o perfil ou redes sociais, basta editar o componente `Card.tsx`.
-- Cores, fontes e temas podem ser ajustados via `globals.css` ou classes Tailwind.
-
----
-
-## 🔹 Licença
-
-Este projeto está licenciado sob a MIT License.  
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Esse projeto vai evoluir conforme eu for aprendendo mais sobre **React**
+e **Next.js** 🚀
