@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 interface ButtonProps {
   label: string;
   href: string;
-  icon?: IconType; // ícone opcional
+  icon?: IconType;
 }
 
 export default function Button({ label, href, icon: Icon }: ButtonProps) {
