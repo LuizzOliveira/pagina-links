@@ -3,6 +3,22 @@ import Button from "./components/Button";
 import { FaInstagram, FaLinkedin, FaGithub, FaEdit } from "react-icons/fa";
 
 export default function Card() {
+  const redesSocias = [
+    {id: 1, nome: "Instagram", link: "https://www.instagram.com/lluizh_so", icon: FaInstagram},
+    {id: 2, nome: "GitHub", link: "https://github.com/LuizzOliveira/", icon: FaGithub},
+    {id: 3, nome: "Linkedin", link: "https://www.linkedin.com/in/luiz-oliveira-2a3879255/", icon: FaLinkedin},
+    {id: 4, nome: "Frontend Mentor", link: "https://www.frontendmentor.io/profile/LuizzOliveira", icon: FaEdit}
+  ]
+
+  const listaLinks = redesSocias.map(redeSocial =>
+    <Button 
+      key={redeSocial.id} 
+      label={redeSocial.nome} 
+      href={redeSocial.link} 
+      icon={redeSocial.icon} 
+    />
+  )
+
   return (
     <div className="flex items-center justify-center bg-gray-950 h-screen">
       <div className="flex flex-col items-center text-center bg-gray-800 text-white p-6 rounded-xl
@@ -26,14 +42,10 @@ export default function Card() {
         <h2 className="text-xl font-bold">Luiz Henrique</h2>
         <p className="text-lime-300 text-sm">Acesse minhas redes sociais!</p>
 
-        {/* Botões */}
+        {/* Links */}
         <div className="flex flex-col items-center w-full gap-4 mt-4">
-          <Button label="Instagram" href="https://www.instagram.com/lluizh_so" icon={FaInstagram} />
-          <Button label="Linkedin" href="https://www.linkedin.com/in/luiz-oliveira-2a3879255/" icon={FaLinkedin} />
-          <Button label="GitHub" href="https://github.com/LuizzOliveira/" icon={FaGithub} />
-          <Button label="Frontend Mentor" href="https://www.frontendmentor.io/profile/LuizzOliveira" icon={FaEdit} />
+          {listaLinks}
         </div>
-
       </div>
     </div>
   );
